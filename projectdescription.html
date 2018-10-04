@@ -19,50 +19,69 @@
 </head>
 
 <body>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    margin-left: 200px;    
+    background-color: #4f93c6;
+    color: #fcfdff;
+}
 
-    <div id="wrapper">
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fcfdff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="projectdescription.html">Project Description</a>
-                </li>
-                <li>
-                    <a href="deliver.html">Deliverables/Outcomes</a>
-                </li>
-                <li>
-                    <a href="function.html">Functionality and Technology</a>
-                </li>
-                <li>
-                    <a href="audience.html">Audience</a>
-                </li>
-                <li>
-                    <a href="data.html">Data, Information, Content</a>
-                </li>
-                <li>
-                    <a href="partners.html">Partners</a>
-                </li>
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #4f93c6;
+    display: block;
+}
 
-        <!-- Page Content -->
+.sidenav a:hover {
+    color: #1b366d;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="projectdescription.html">Project Description</a>
+  <a href="deliver.html">Deliverables/Outcomes</a>
+  <a href="function.html">Functionality and Technology</a>
+  <a href="audience.html">Audience</a>
+  <a href="data.html">Data, Information, Content</a>
+  <a href="partners.html">Partners</a>
+  <a href="about.html">About Us</a>
+</div>
+
+    
+    <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <h1>Project Description</h1>
                 <p>This projects seeks to connect educators and students with an important historical site in South Africa, Robben Island. Robben Island is located off the coast of Cape Town, and is inaccessible for students around the world and even within South Africa, where economic resources are often limited. We propose creating a weekly live-stream of different parts of the island through local tour guides, to provide access to this historical resource for students and teachers in schools across the English-speaking world, including much of sub-Saharan Africa.</p>
                 <p>Robben Island is a UNESCO World Heritage Site and former prison that held many involved in the anti-apartheid struggle. Nelson Mandela, South Africa’s first president after apartheid, spent 27 years as a prisoner on Robben Island. Before the anti-apartheid struggle, Robben Island also served as a prison for political and other prisoners for hundreds of years, as well as  a leper colony, and an animal quarantine station. The island also features an array of wildlife, flora, and fauna that would also be of interest to students and teachers.</p>
                 <p>We will include options to donate and/or create fundraisers in classrooms to contribute to the cultural heritage preservation of Robben Island.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
