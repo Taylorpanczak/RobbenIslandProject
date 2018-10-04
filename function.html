@@ -19,48 +19,67 @@
 </head>
 
 <body>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    margin-left: 200px;    
+    background-color: #4f93c6;
+    color: #fcfdff;
+}
 
-    <div id="wrapper">
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fcfdff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="projectdescription.html">Project Description</a>
-                </li>
-                <li>
-                    <a href="deliver.html">Deliverables/Outcomes</a>
-                </li>
-                <li>
-                    <a href="function.html">Functionality and Technology</a>
-                </li>
-                <li>
-                    <a href="audience.html">Audience</a>
-                </li>
-                <li>
-                    <a href="data.html">Data, Information, Content</a>
-                </li>
-                <li>
-                    <a href="partners.html">Partners</a>
-                </li>
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #4f93c6;
+    display: block;
+}
 
+.sidenav a:hover {
+    color: #1b366d;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="projectdescription.html">Project Description</a>
+  <a href="deliver.html">Deliverables/Outcomes</a>
+  <a href="function.html">Functionality and Technology</a>
+  <a href="audience.html">Audience</a>
+  <a href="data.html">Data, Information, Content</a>
+  <a href="partners.html">Partners</a>
+  <a href="about.html">About Us</a>
+</div>
+    
+    
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <h1>Functionality and Technology</h1>
                 <p>The live stream will use the infrastructure provided by YouTube while being embedded in our own privately hosted site mentioned above. To control for overall quality of the live stream, we will use the program Open Broadcaster Software which is free and open source. This allows us to control audio levels, render quality, and bandwidth streamed to YouTube.  Users will access the live stream by opening the website and will be able to interact with moderators by chatting and sending messages through the chat functionality provided by YouTube. Moderators will monitor the chat as well as answer questions posted by viewers while interacting with the tour guides through private messaging. The video itself will feature a tour guide presenting information about the predetermined subject on the island. The subjects will range from the geologic history of Robben island to the imprisonment of Nelson Mandela. They will also include interviews with former prisoners.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
